@@ -9,8 +9,108 @@
   </head>
   <body>
     <header>
+      <div>
+        <img class="hoverbotones" src="./img/3-lines.svg" alt="3 lineas del boton de la barra aside">
+        <a href="https://www.youtube.com/" target="_blank"><img src="./img/logo.svg" alt="Logo de youtube"></a> 
+      </div>
+      <div class="separador">
+        <form class="busqueda">
+          <input type="text" placeholder="Buscar">
+          <button type="submit" class="lupa">
+            <img src="./img/lupa.svg" alt="Lupa de busqueda">
+          </button>
+        </form>
+        <div>
+          <button type="button" class="micro">
+            <img class="hoverbotones" src="./img/microfono.svg" alt="Microfono">
+          </button>
+        </div>
+      </div>
+      <div>
+        <button class="plus">
+          <img src="./img/signo-del+.svg" alt="Signo de +">
+          <p>Crear</p>
+        </button>
+        <img class="hoverbotones" src="./img/campana.svg" alt="Campana de notificaciones">
+        <img id="perfil" src="./img/foto-de-usuario.jpg" alt="perfil de usuario">
+      </div>
     </header>
-    <main>      
+    <aside class="separador">
+      <nav>
+        <ul>
+          <li class="hover2"><a href=""><img  src="./img/casa.svg" alt="Principal">Principal</a></li>
+          <li class="hover2"><a href=""><img  src="./img/short.svg" alt="Short">Short</a></li>
+          <li class="hover2"><a href=""><img  src="./img/suscripciones.svg" alt="Suscripciones">Suscripciones</a></li>
+          <h4 class="hover2">Tú ></h4>
+          <li class="hover2"><a href=""><img  src="./img/historial.svg" alt="Historial">Historial</a></li>
+          <li class="hover2"><a href=""><img  src="./img/playlist.svg" alt="playlist">Playlist</a></li>
+          <li class="hover2"><a href=""><img  src="./img/ver-mas-tarde.svg" alt="Ver mas tarde">Ver mas tarde</a></li>
+          <li class="hover2"><a href=""><img  src="./img/videos-que-me-gustan.svg" alt="Videos que me gustan">Videos que me gustan</a></li>
+          <h4 class="hover2">Suscripciones</h4>
+          <li class="hover2"><a href=""><img  class="canal" src="./img/konato.jpg" alt="Canal 1">Konato</a></li>
+          <li class="hover2"><a href=""><img  class="canal" src="./img/Rubius Z.jpg" alt="Canal 2">Rubius Z</a></li>
+          <li class="hover2"><a href=""><img  src="./img/Todas-las-subs.svg" alt="Todas las suscripciones">Todas las suscripciones</a></li>
+          <h4 class="hover2">Explorar</h4>
+          <li class="hover2"><a href=""><img  src="./img/tendencias.svg" alt="tendencias">Tendencias</a></li>
+          <li class="hover2"><a href=""><img  src="./img/musica.svg" alt="Musica">Música</a></li>
+          <li class="hover2"><a href=""><img  src="./img/videojuegos.svg" alt="videojuegos">Videojuegos</a></li>
+          <li class="hover2"><a href=""><img  src="./img/deportes.svg" alt="Deportes">Deportes</a></li>
+          <li class="hover2"><a href=""><img  src="./img/aprendizaje.svg" alt="aprendizaje">Aprendizaje</a></li>
+          <h4 class="hover2">Más de YouTube</h4>
+          <li class="hover2"><a href=""><img  src="./img/Youtube premium.svg" alt="Youtube Premium">YouTube Premium</a></li>
+          <li class="hover2"><a href=""><img  src="./img/youtubeMusic.svg" alt="YouTube Music">YouTube Music</a></li>
+          <li class="down" class="hover2"><a href=""><img  src="./img/YoutubeKids.svg" alt="YouTube Kids">YouTube Kids</a></li>
+          <li class="hover2"><a href=""><img  src="./img/configuracion.svg" alt="Configuración">Configuración</a></li>
+          <li class="hover2"><a href=""><img  src="./img/historialDedenuncias.svg" alt="Historial De Denuncias">Historial De Denuncias</a></li>
+          <li class="hover2"><a href=""><img  src="./img/ayuda.svg" alt="Ayuda">Ayuda</a></li>
+          <li class="down" class="hover2"><a href=""><img  src="./img/enviarComentarios.svg" alt="Enviar Comentarios">Enviar Comentarios</a></li>
+        </ul>
+        <div class="aside-footer"> <!--Lo llame asi por la pregunta que hice en clase--> 
+          <div class="footer-links">
+            <a href="#">Acerca de Prensa</a>
+            <a href="#">Derechos de autor</a>
+            <a href="#">Comunicarte con nosotros</a>
+            <a href="#">Creadores Anunciar</a>
+            <a href="#">Desarrolladores</a>
+            <a href="#">Condiciones Privacidad</a>
+            <a href="#">Políticas y seguridad</a>
+            <a href="#">Cómo funciona YouTube</a>
+            <a href="#">Prueba funciones nuevas</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>© 2025 Google LLC</p>
+        </div>
+      </nav>
+    </aside>
+    <main>
+      <div class="tags-container">
+        <div id="todo" class="tag">Todos</div>
+        <div class="tag">Videojuegos</div>
+        <div class="tag">En tiempo real</div>
+        <div class="tag">Pokémon</div>
+        <div class="tag">Podcasts</div>
+        <div class="tag">El Rubius</div>
+        <div class="tag">Jedis</div>
+        <div class="tag">Hojas de estilos en cascada</div>
+        <div class="tag">Ingeniero de software</div>
+        <div class="tag">Héroe</div>
+        <div class="tag">Series de TV</div>
+      </div>
+      <div class="videos-fila">
+        <div class="video">
+          <img class="imagen-video" src="./img/video1.jpg" alt="Video1">
+            <div class="video-info">
+              <img src="./img/Imagen Perfil video 1.jpg" alt="logo-canal" class="user">
+            <div class="detalles">
+              <h3>Curso de CSS completo</h3>
+              <p>mindulive</p>
+              <p>147 k vistas • hace 11 meses </p>
+            </div>
+          </div>
+        </div>
+        
+      </div> <!--DIV PRINCIPAL POR EL CLASS DE VIDEO FILA-->
     </main>    
   </body>
 </html>
