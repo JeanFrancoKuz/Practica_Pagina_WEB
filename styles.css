@@ -279,37 +279,43 @@ main {
 }
 
 /* ----Caja de video----- */
+
 .videos-fila {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual ancho */
+  gap: 20px; /* Espacio entre los videos */
   margin-bottom: 20px;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
 }
 
+/* Estilos de cada video */
 .video {
-  width: 320px;
   cursor: pointer;
 }
 
+/* Estilos de la imagen del video */
 .imagen-video {
   width: 100%;
   border-radius: 10px;
 }
 
+/* Estilos de la información del video */
 .video-info {
   display: flex;
   margin-top: 10px;
+  align-items: center;
 }
 
-.user{
+.user {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  object-fit:cover;
-  cursor: pointer;
-  margin-right:15px;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-bottom: 30px;
 }
 
-.detalles{
+.detalles {
   flex: 1;
 }
 
@@ -325,12 +331,10 @@ main {
 }
 
 
-
-
 /* Cosas globales */
 
 aside {
-  scrollbar-width: thin; /* Para navegadores Firefox */
+  scrollbar-width: thin; 
   scrollbar-color: var(--color-borde-barra) var(--color-fondo-principal); /* Color del scrollbar para Firefox */
 }
 
@@ -344,3 +348,32 @@ aside::-webkit-scrollbar-thumb {
   border: 2px solid var(--color-fondo-principal); /* Borde alrededor del pulgar del scrollbar */
 }
 
+/* Media Queries para hacer el diseño responsive */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .videos-fila {
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para pantallas grandes */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .videos-fila {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para pantallas medianas */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .videos-fila {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para pantallas medianas */
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .videos-fila {
+    grid-template-columns: 1fr; /* Una sola columna para pantallas pequeñas */
+  }
+}
