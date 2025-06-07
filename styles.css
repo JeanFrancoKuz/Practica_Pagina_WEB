@@ -25,16 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #18181882; /* Fondo semi-transparente oscuro */
-  border-radius: 0; /* Sin bordes redondeados para el header */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  backdrop-filter: blur(5px); /* Efecto de desenfoque */
-  -webkit-backdrop-filter: blur(5px); /* Para soporte en navegadores basados en WebKit */
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde semi-transparente */
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  height: 50px;
 }
 
 /* Primer div con dos SVG */
@@ -46,10 +37,11 @@ header > div:first-child {
 }
 
 /* Segundo div y barra de búsqueda */
-.separador{
+.separador {
   display: flex;
   flex-direction: row;
 }
+
 .busqueda {
   display: flex;
   align-items: center;
@@ -104,22 +96,21 @@ button {
 }
 
 /* Tercer div y botón crear, campana y foto perfil */
-
-.plus{
+.plus {
   display: flex;
   align-items: center;
-  background-color: #2E2E2E; 
+  background-color: #2E2E2E;
   color: white;
   border: none;
-  border-radius: 24px; /* Bordes redondeados */
-  padding: 10px 16px; /* Espaciado interno */
+  border-radius: 24px;
+  padding: 10px 16px;
   gap: 5px;
   font-size: 14px;
   cursor: pointer;
-
 }
+
 .plus:hover {
-  background-color: #3E3E3E; /* Color de fondo al hacer hover */
+  background-color: #3E3E3E;
 }
 
 header > div:last-child {
@@ -139,9 +130,9 @@ header > div:last-child {
 /* Estilo para los iconos del navegador */
 .hoverbotones {
   cursor: pointer;
-  padding: 6px; /*  el tamaño del círculo de hover */
+  padding: 6px;
   border-radius: 50%;
-  display: inline-flex; /* para padding no afecte el diseño general */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
@@ -150,39 +141,95 @@ header > div:last-child {
   background-color: var(--color-hover-boton);
 }
 
+/*----------TAG---------- */
+.cristal {
+  background: #18181882;
+  border-radius: 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 20;
+}
+
+.tags-container {
+  display: flex;
+  gap: 8px;
+  padding: 10px 20px;
+  overflow-x: auto;
+  box-sizing: border-box;
+  top: 70px;
+  z-index: 80;
+  margin-left: 228px;
+}
+
+.tags-container::-webkit-scrollbar {
+  display: none;
+}
+
+.tags-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tag {
+  background-color: var(--color-borde-barra);
+  color: var(--color-texto-principal);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tag:hover {
+  background-color: var(--color-hover-boton);
+}
+
+#todo {
+  background-color: white;
+  color: black;
+}
+
+/* -----LA PARTE MAIN----- */
+main {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  align-items: flex-start;
+}
 
 /* ------ASIDE DEL LADO IZQUIERDO-------- */
-
 aside {
-  width: 267px;
+  width: 18%;
+  height:100%;
   background-color: var(--color-fondo-principal);
-  position: fixed;
-  top: 60px;
-  left: 0;
-  bottom: 0;
+  position: sticky;
   overflow-y: auto;
-  padding: 12px 0;
-  border: #121212 solid 1;
+  border: 1px solid #121212;
 }
 
 aside nav ul {
   list-style: none;
 }
 
-aside nav ul li{
+aside nav ul li {
   padding: 10px 20px;
   cursor: pointer;
 }
 
-aside nav ul h4{
+aside nav ul h4 {
   padding: 10px 20px;
   margin-top: 5px;
   border-top: #FFFFFF 1px solid;
   cursor: pointer;
 }
 
-.down{
-  border-bottom:#FFFFFF 1px solid;
+.down {
+  border-bottom: #FFFFFF 1px solid;
   margin-bottom: 5px;
 }
 
@@ -210,11 +257,10 @@ aside nav ul li img {
   height: 24px;
 }
 
-/* -------ASIDE--FOOTER RARO */
 .aside-footer {
   padding: 20px;
   font-size: 12px;
-  color: var(--color-texto-secundario); /* Línea superior para separar el footer */
+  color: var(--color-texto-secundario);
 }
 
 .footer-links {
@@ -240,57 +286,34 @@ aside nav ul li img {
   font-size: 11px;
 }
 
-
-/* -----LA PARTE MAIN----- */
-main {
-  margin-left: 267px; /* Igual al ancho del aside */
-  padding: 20px;
-  flex: 1;
+aside {
+  scrollbar-width: thin; 
+  scrollbar-color: var(--color-borde-barra) var(--color-fondo-principal); /* Color del scrollbar para Firefox */
 }
 
-/*----------TAG---------- */
-.tags-container {
-  display: flex;
-  gap: 8px; 
-  padding: 1px;
-  background-color: var(--color-fondo-principal);
+aside::-webkit-scrollbar-track {
+  background: var(--color-fondo-principal); /* Color del fondo del scrollbar */
 }
 
-.tag {
-  background-color: var(--color-borde-barra);
-  color: var(--color-texto-principal);
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  white-space: nowrap;
-  flex-shrink: 0; /* Evita que las etiquetas se encojan */
-  margin-bottom: 20px;
-}
-
-.tag:hover {
-  background-color: var(--color-hover-boton);
-}
-
-/* Estilo para la primera etiqueta */
-#todo {
-  background-color: white; 
-  color: black; 
+aside::-webkit-scrollbar-thumb {
+  background-color: var(--color-borde-barra); /* Color del pulgar del scrollbar */
+  border-radius: 20px; /* Bordes redondeados para el pulgar del scrollbar */
+  border: 2px solid var(--color-fondo-principal); /* Borde alrededor del pulgar del scrollbar */
 }
 
 /* ----Caja de video----- */
-
 .videos-fila {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual ancho */
-  gap: 20px; /* Espacio entre los videos */
-  margin-bottom: 20px;
-  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 /* Estilos de cada video */
 .video {
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 /* Estilos de la imagen del video */
@@ -331,49 +354,88 @@ main {
 }
 
 
-/* Cosas globales */
-
-aside {
-  scrollbar-width: thin; 
-  scrollbar-color: var(--color-borde-barra) var(--color-fondo-principal); /* Color del scrollbar para Firefox */
-}
-
-aside::-webkit-scrollbar-track {
-  background: var(--color-fondo-principal); /* Color del fondo del scrollbar */
-}
-
-aside::-webkit-scrollbar-thumb {
-  background-color: var(--color-borde-barra); /* Color del pulgar del scrollbar */
-  border-radius: 20px; /* Bordes redondeados para el pulgar del scrollbar */
-  border: 2px solid var(--color-fondo-principal); /* Borde alrededor del pulgar del scrollbar */
-}
-
 /* Media Queries para hacer el diseño responsive */
+/* Small devices (phones, less than 768px) */
+@media only screen and (max-width: 767px) {
+  header > div:last-child,
+  .tags-container {
+    display: none;
+  }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+  .busqueda {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  main {
+    margin-left: 0;
+    width: 100%;
+  }
+
   .videos-fila {
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas para pantallas grandes */
+    grid-template-columns: 1fr;
+  }
+
+  .video {
+    max-width: 100%;
+  }
+
+  .imagen-video {
+    height: auto;
+  }
+
+  aside {
+    display: none !important;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .busqueda {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .tags-container {
+    margin-left: 0;
+  }
+
+  .videos-fila {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Ajusta el tamaño mínimo de los videos */
+    gap: 10px; /* Reduce el espacio entre los videos */
+  }
+
+  .video {
+    max-width: 100%;
+  }
+
+  .imagen-video {
+    height: auto;
+  }
+
+  aside {
+    width: 40%;
+  }
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .videos-fila {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas para pantallas medianas */
+@media only screen and (min-width: 992px) {
+  .busqueda {
+    width: 500px;
   }
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .videos-fila {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas para pantallas medianas */
+  .tags-container {
+    margin-left: 228px;
   }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+  aside {
+    display: block;
+    width: 18%;
+  }
+
   .videos-fila {
-    grid-template-columns: 1fr; /* Una sola columna para pantallas pequeñas */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
 }

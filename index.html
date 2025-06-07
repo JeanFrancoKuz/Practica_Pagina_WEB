@@ -8,196 +8,297 @@
     <link rel="icon" href="./img/iconico.svg" type="image/png">
   </head>
   <body>
-    <header>
-      <div>
-        <img class="hoverbotones" src="./img/3-lines.svg" alt="3 lineas del boton de la barra aside">
-        <a href="https://www.youtube.com/" target="_blank"><img src="./img/logo.svg" alt="Logo de youtube"></a> 
-      </div>
-      <div class="separador">
-        <form class="busqueda">
-          <input type="text" placeholder="Buscar">
-          <button type="submit" class="lupa">
-            <img src="./img/lupa.svg" alt="Lupa de busqueda">
-          </button>
-        </form>
+    <div class="cristal">
+      <header>
         <div>
-          <button type="button" class="micro">
-            <img class="hoverbotones" src="./img/microfono.svg" alt="Microfono">
+          <img class="hoverbotones" src="./img/3-lines.svg" alt="3 lineas del boton de la barra aside">
+          <a href="https://www.youtube.com/" target="_blank"><img src="./img/logo.svg" alt="Logo de youtube"></a> 
+        </div>
+        <div class="separador">
+          <form class="busqueda">
+            <input type="text" placeholder="Buscar">
+            <button type="submit" class="lupa">
+              <img src="./img/lupa.svg" alt="Lupa de busqueda">
+            </button>
+          </form>
+          <div>
+            <button type="button" class="micro">
+              <img class="hoverbotones" src="./img/microfono.svg" alt="Microfono">
+            </button>
+          </div>
+        </div>
+        <div>
+          <button class="plus">
+            <img src="./img/signo-del+.svg" alt="Signo de +">
+            <p>Crear</p>
           </button>
+          <img class="hoverbotones" src="./img/campana.svg" alt="Campana de notificaciones">
+          <img id="perfil" src="./img/foto-de-usuario.jpg" alt="perfil de usuario">
         </div>
-      </div>
-      <div>
-        <button class="plus">
-          <img src="./img/signo-del+.svg" alt="Signo de +">
-          <p>Crear</p>
-        </button>
-        <img class="hoverbotones" src="./img/campana.svg" alt="Campana de notificaciones">
-        <img id="perfil" src="./img/foto-de-usuario.jpg" alt="perfil de usuario">
-      </div>
-    </header>
-    <aside class="separador">
-      <nav>
-        <ul>
-          <li class="hover2"><a href=""><img  src="./img/casa.svg" alt="Principal">Principal</a></li>
-          <li class="hover2"><a href=""><img  src="./img/short.svg" alt="Short">Short</a></li>
-          <li class="hover2"><a href=""><img  src="./img/suscripciones.svg" alt="Suscripciones">Suscripciones</a></li>
-          <h4 class="hover2">Tú ></h4>
-          <li class="hover2"><a href=""><img  src="./img/historial.svg" alt="Historial">Historial</a></li>
-          <li class="hover2"><a href=""><img  src="./img/playlist.svg" alt="playlist">Playlist</a></li>
-          <li class="hover2"><a href=""><img  src="./img/ver-mas-tarde.svg" alt="Ver mas tarde">Ver mas tarde</a></li>
-          <li class="hover2"><a href=""><img  src="./img/videos-que-me-gustan.svg" alt="Videos que me gustan">Videos que me gustan</a></li>
-          <h4 class="hover2">Suscripciones</h4>
-          <li class="hover2"><a href=""><img  class="canal" src="./img/konato.jpg" alt="Canal 1">Konato</a></li>
-          <li class="hover2"><a href=""><img  class="canal" src="./img/Rubius Z.jpg" alt="Canal 2">Rubius Z</a></li>
-          <li class="hover2"><a href=""><img  src="./img/Todas-las-subs.svg" alt="Todas las suscripciones">Todas las suscripciones</a></li>
-          <h4 class="hover2">Explorar</h4>
-          <li class="hover2"><a href=""><img  src="./img/tendencias.svg" alt="tendencias">Tendencias</a></li>
-          <li class="hover2"><a href=""><img  src="./img/musica.svg" alt="Musica">Música</a></li>
-          <li class="hover2"><a href=""><img  src="./img/videojuegos.svg" alt="videojuegos">Videojuegos</a></li>
-          <li class="hover2"><a href=""><img  src="./img/deportes.svg" alt="Deportes">Deportes</a></li>
-          <li class="hover2"><a href=""><img  src="./img/aprendizaje.svg" alt="aprendizaje">Aprendizaje</a></li>
-          <h4 class="hover2">Más de YouTube</h4>
-          <li class="hover2"><a href=""><img  src="./img/Youtube premium.svg" alt="Youtube Premium">YouTube Premium</a></li>
-          <li class="hover2"><a href=""><img  src="./img/youtubeMusic.svg" alt="YouTube Music">YouTube Music</a></li>
-          <li class="down" class="hover2"><a href=""><img  src="./img/YoutubeKids.svg" alt="YouTube Kids">YouTube Kids</a></li>
-          <li class="hover2"><a href=""><img  src="./img/configuracion.svg" alt="Configuración">Configuración</a></li>
-          <li class="hover2"><a href=""><img  src="./img/historialDedenuncias.svg" alt="Historial De Denuncias">Historial De Denuncias</a></li>
-          <li class="hover2"><a href=""><img  src="./img/ayuda.svg" alt="Ayuda">Ayuda</a></li>
-          <li class="down" class="hover2"><a href=""><img  src="./img/enviarComentarios.svg" alt="Enviar Comentarios">Enviar Comentarios</a></li>
-        </ul>
-        <div class="aside-footer"> <!--Lo llame asi por la pregunta que hice en clase--> 
-          <div class="footer-links">
-            <a href="#">Acerca de Prensa</a>
-            <a href="#">Derechos de autor</a>
-            <a href="#">Comunicarte con nosotros</a>
-            <a href="#">Creadores Anunciar</a>
-            <a href="#">Desarrolladores</a>
-            <a href="#">Condiciones Privacidad</a>
-            <a href="#">Políticas y seguridad</a>
-            <a href="#">Cómo funciona YouTube</a>
-            <a href="#">Prueba funciones nuevas</a>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <p>© 2025 Google LLC</p>
-        </div>
-      </nav>
-    </aside>
-    <main>
+      </header>
       <div class="tags-container">
-        <div id="todo" class="tag">Todos</div>
-        <div class="tag">Videojuegos</div>
-        <div class="tag">En tiempo real</div>
-        <div class="tag">Pokémon</div>
-        <div class="tag">Podcasts</div>
-        <div class="tag">El Rubius</div>
-        <div class="tag">Jedis</div>
-        <div class="tag">Hojas de estilos en cascada</div>
-        <div class="tag">Ingeniero de software</div>
-        <div class="tag">Héroe</div>
-        <div class="tag">Series de TV</div>
-      </div>
-      <div class="videos-fila">
-        <div class="video">
-          <img class="imagen-video" src="./img/video1.jpg" alt="Video1">
-            <div class="video-info">
-              <img src="./img/Imagen Perfil video 1.jpg" alt="logo-canal" class="user">
-            <div class="detalles">
-              <h3>Curso de CSS completo</h3>
-              <p>mindulive</p>
-              <p>147 k vistas • hace 11 meses </p>
+          <div id="todo" class="tag">Todos</div>
+          <div class="tag">Videojuegos</div>
+          <div class="tag">En tiempo real</div>
+          <div class="tag">Pokémon</div>
+          <div class="tag">Podcasts</div>
+          <div class="tag">El Rubius</div>
+          <div class="tag">Jedis</div>
+          <div class="tag">Hojas de estilos en cascada</div>
+          <div class="tag">Ingeniero de software</div>
+          <div class="tag">Héroe</div>
+          <div class="tag">Series de TV</div>
+        </div>
+    </div>
+    <main>
+        <aside class="separador">
+        <nav>
+          <ul>
+            <li class="hover2"><a href=""><img  src="./img/casa.svg" alt="Principal">Principal</a></li>
+            <li class="hover2"><a href=""><img  src="./img/short.svg" alt="Short">Short</a></li>
+            <li class="hover2"><a href=""><img  src="./img/suscripciones.svg" alt="Suscripciones">Suscripciones</a></li>
+            <h4 class="hover2">Tú ></h4>
+            <li class="hover2"><a href=""><img  src="./img/historial.svg" alt="Historial">Historial</a></li>
+            <li class="hover2"><a href=""><img  src="./img/playlist.svg" alt="playlist">Playlist</a></li>
+            <li class="hover2"><a href=""><img  src="./img/ver-mas-tarde.svg" alt="Ver mas tarde">Ver mas tarde</a></li>
+            <li class="hover2"><a href=""><img  src="./img/videos-que-me-gustan.svg" alt="Videos que me gustan">Videos que me gustan</a></li>
+            <h4 class="hover2">Suscripciones</h4>
+            <li class="hover2"><a href=""><img  class="canal" src="./img/konato.jpg" alt="Canal 1">Konato</a></li>
+            <li class="hover2"><a href=""><img  class="canal" src="./img/Rubius Z.jpg" alt="Canal 2">Rubius Z</a></li>
+            <li class="hover2"><a href=""><img  src="./img/Todas-las-subs.svg" alt="Todas las suscripciones">Todas las suscripciones</a></li>
+            <h4 class="hover2">Explorar</h4>
+            <li class="hover2"><a href=""><img  src="./img/tendencias.svg" alt="tendencias">Tendencias</a></li>
+            <li class="hover2"><a href=""><img  src="./img/musica.svg" alt="Musica">Música</a></li>
+            <li class="hover2"><a href=""><img  src="./img/videojuegos.svg" alt="videojuegos">Videojuegos</a></li>
+            <li class="hover2"><a href=""><img  src="./img/deportes.svg" alt="Deportes">Deportes</a></li>
+            <li class="hover2"><a href=""><img  src="./img/aprendizaje.svg" alt="aprendizaje">Aprendizaje</a></li>
+            <h4 class="hover2">Más de YouTube</h4>
+            <li class="hover2"><a href=""><img  src="./img/Youtube premium.svg" alt="Youtube Premium">YouTube Premium</a></li>
+            <li class="hover2"><a href=""><img  src="./img/youtubeMusic.svg" alt="YouTube Music">YouTube Music</a></li>
+            <li class="down" class="hover2"><a href=""><img  src="./img/YoutubeKids.svg" alt="YouTube Kids">YouTube Kids</a></li>
+            <li class="hover2"><a href=""><img  src="./img/configuracion.svg" alt="Configuración">Configuración</a></li>
+            <li class="hover2"><a href=""><img  src="./img/historialDedenuncias.svg" alt="Historial De Denuncias">Historial De Denuncias</a></li>
+            <li class="hover2"><a href=""><img  src="./img/ayuda.svg" alt="Ayuda">Ayuda</a></li>
+            <li class="down" class="hover2"><a href=""><img  src="./img/enviarComentarios.svg" alt="Enviar Comentarios">Enviar Comentarios</a></li>
+          </ul>
+          <div class="aside-footer"> <!--Lo llame asi por la pregunta que hice en clase--> 
+            <div class="footer-links">
+              <a href="#">Acerca de Prensa</a>
+              <a href="#">Derechos de autor</a>
+              <a href="#">Comunicarte con nosotros</a>
+              <a href="#">Creadores Anunciar</a>
+              <a href="#">Desarrolladores</a>
+              <a href="#">Condiciones Privacidad</a>
+              <a href="#">Políticas y seguridad</a>
+              <a href="#">Cómo funciona YouTube</a>
+              <a href="#">Prueba funciones nuevas</a>
             </div>
           </div>
-        </div>
-        <div class="video">
-          <img class="imagen-video" src="./img/Video2.jpg" alt="Video1">
-            <div class="video-info">
-              <img src="./img/Imagen de perfil video 2.jpg" alt="logo-canal" class="user">
-            <div class="detalles">
-              <h3>3 mujeres CONFIENSAN lo que las ENAMORA (y lo que las ESPANTA )</h3>
-              <p>PICPOD TV</p>
-              <p>106 k vistas • hace 1 día </p>
+          <div class="footer-copyright">
+            <p>© 2025 Google LLC</p>
+          </div>
+        </nav>
+      </aside>
+        <div class="videos-fila">
+          <div class="video">
+            <img class="imagen-video" src="./img/video1.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 1.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>Curso de CSS completo</h3>
+                <p>mindulive</p>
+                <p>147 k vistas • hace 11 meses </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="video">
-          <img class="imagen-video" src="./img/video3.jpg" alt="Video1">
-            <div class="video-info">
-              <img src="./img/Imagen de Perfil video 3.jpg" alt="logo-canal" class="user">
-            <div class="detalles">
-              <h3>NO SE VAN A ATREVER ¿NO? 👑 POKEMON 🎗️ TEAMLOCKE 4 🎗️ Ep.8</h3>
-              <p>ZenPokeFan</p>
-              <p>12 k vistas • hace 2 horas </p>
+          <div class="video">
+            <img class="imagen-video" src="./img/Video2.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen de perfil video 2.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>3 mujeres CONFIENSAN lo que las ENAMORA (y lo que las ESPANTA )</h3>
+                <p>PICPOD TV</p>
+                <p>106 k vistas • hace 1 día </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="video">
-          <img class="imagen-video" src="./img/video4.jpg" alt="Video1">
-            <div class="video-info">
-              <img src="./img/Imagen Perfil video 4.jpg" alt="logo-canal" class="user">
-            <div class="detalles">
-              <h3>BG3 - HONOR SOLO - Esqueleto Paladín - Parte 1 💀</h3>
-              <p>TAV y VEL - TODO RPGS</p>
-              <p>18 k vistas • hace 1 año </p>
+          <div class="video">
+            <img class="imagen-video" src="./img/video3.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen de Perfil video 3.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>NO SE VAN A ATREVER ¿NO? 👑 POKEMON 🎗️ TEAMLOCKE 4 🎗️ Ep.8</h3>
+                <p>ZenPokeFan</p>
+                <p>12 k vistas • hace 2 horas </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="video">
-          <img class="imagen-video" src="./img/video5.jpg" alt="Video1">
-            <div class="video-info">
-              <img src="./img/Imagen Perfil video 5.jpg" alt="logo-canal" class="user">
-            <div class="detalles">
-              <h3>13 Increíbles Datos del Jedi Ezra Bridger Que No Conocías - Su Historia Completa – Star Wars -</h3>
-              <p>La Sombra del Imperio</p>
-              <p>147 k vistas • hace 11 meses </p>
+          <div class="video">
+            <img class="imagen-video" src="./img/video4.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 4.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>BG3 - HONOR SOLO - Esqueleto Paladín - Parte 1 💀</h3>
+                <p>TAV y VEL - TODO RPGS</p>
+                <p>18 k vistas • hace 1 año </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="video">
-          <img class="imagen-video" src="./img/video6.jpg" alt="Video1">
-            <div class="video-info">
-              <img src="./img/Imagen Perfil video 6.jpg" alt="logo-canal" class="user">
-            <div class="detalles">
-              <h3>¿Cómo conservar amistades? x Mau y Ricky | 257</h3>
-              <p>El Cuartico</p>
-              <p>116 k vistas • hace 6 días</p>
+          <div class="video">
+            <img class="imagen-video" src="./img/video5.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 5.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>13 Increíbles Datos del Jedi Ezra Bridger Que No Conocías - Su Historia Completa – Star Wars -</h3>
+                <p>La Sombra del Imperio</p>
+                <p>147 k vistas • hace 11 meses </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="video">
-          <img class="imagen-video" src="./img/video7.jpg" alt="Video1">
-            <div class="video-info">
-              <img src="./img/Imagen Perfil video 7.jpg" alt="logo-canal" class="user">
-            <div class="detalles">
-              <h3>El PEOR FINAL que te PUEDES IMAGINAR | The Acolyte | Análisis Pretencioso</h3>
-              <p>Hombre Pretencioso</p>
-              <p>335 k vistas • hace 10 meses </p>
+          <div class="video">
+            <img class="imagen-video" src="./img/video6.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 6.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>¿Cómo conservar amistades? x Mau y Ricky | 257</h3>
+                <p>El Cuartico</p>
+                <p>116 k vistas • hace 6 días</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="video">
-          <img class="imagen-video" src="./img/video8.jpg" alt="Video1">
-            <div class="video-info">
-              <img src="./img/Imagen Perfil video 8.jpg" alt="logo-canal" class="user">
-            <div class="detalles">
-              <h3>¿QUÉ llevó a ANAKIN al LADO OSCURO? | Star Wars 1, 2 y 3 | Relato y Reflexiones</h3>
-              <p>Farid Dieck</p>
-              <p>2.3 M vistas • hace 10 días  </p>
+          <div class="video">
+            <img class="imagen-video" src="./img/video7.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 7.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>El PEOR FINAL que te PUEDES IMAGINAR | The Acolyte | Análisis Pretencioso</h3>
+                <p>Hombre Pretencioso</p>
+                <p>335 k vistas • hace 10 meses </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="video">
-          <img class="imagen-video" src="./img/video9.jpg" alt="Video1">
-            <div class="video-info">
-              <img src="./img/Imagen Perfil video 9.jpg" alt="logo-canal" class="user">
-            <div class="detalles">
-              <h3>😮 ¡¡¡SECRETOS INCREÍBLES de los HECHIZOS!!! 😮 ✅ Baldur's Gate 3 Secretos</h3>
-              <p>Zovike Roleplays</p>
-              <p>54 k vistas • hace 1 año </p>
+          <div class="video">
+            <img class="imagen-video" src="./img/video8.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 8.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>¿QUÉ llevó a ANAKIN al LADO OSCURO? | Star Wars 1, 2 y 3 | Relato y Reflexiones</h3>
+                <p>Farid Dieck</p>
+                <p>2.3 M vistas • hace 10 días  </p>
+              </div>
             </div>
           </div>
-        </div>
-      </div> <!--DIV PRINCIPAL POR EL CLASS DE VIDEO FILA-->
+          <div class="video">
+            <img class="imagen-video" src="./img/video9.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 9.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>😮 ¡¡¡SECRETOS INCREÍBLES de los HECHIZOS!!! 😮 ✅ Baldur's Gate 3 Secretos</h3>
+                <p>Zovike Roleplays</p>
+                <p>54 k vistas • hace 1 año </p>
+              </div>
+            </div>
+          </div>
+        <div class="video">
+            <img class="imagen-video" src="./img/video1.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 1.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>Curso de CSS completo</h3>
+                <p>mindulive</p>
+                <p>147 k vistas • hace 11 meses </p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <img class="imagen-video" src="./img/Video2.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen de perfil video 2.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>3 mujeres CONFIENSAN lo que las ENAMORA (y lo que las ESPANTA )</h3>
+                <p>PICPOD TV</p>
+                <p>106 k vistas • hace 1 día </p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <img class="imagen-video" src="./img/video3.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen de Perfil video 3.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>NO SE VAN A ATREVER ¿NO? 👑 POKEMON 🎗️ TEAMLOCKE 4 🎗️ Ep.8</h3>
+                <p>ZenPokeFan</p>
+                <p>12 k vistas • hace 2 horas </p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <img class="imagen-video" src="./img/video4.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 4.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>BG3 - HONOR SOLO - Esqueleto Paladín - Parte 1 💀</h3>
+                <p>TAV y VEL - TODO RPGS</p>
+                <p>18 k vistas • hace 1 año </p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <img class="imagen-video" src="./img/video5.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 5.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>13 Increíbles Datos del Jedi Ezra Bridger Que No Conocías - Su Historia Completa – Star Wars -</h3>
+                <p>La Sombra del Imperio</p>
+                <p>147 k vistas • hace 11 meses </p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <img class="imagen-video" src="./img/video6.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 6.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>¿Cómo conservar amistades? x Mau y Ricky | 257</h3>
+                <p>El Cuartico</p>
+                <p>116 k vistas • hace 6 días</p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <img class="imagen-video" src="./img/video7.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 7.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>El PEOR FINAL que te PUEDES IMAGINAR | The Acolyte | Análisis Pretencioso</h3>
+                <p>Hombre Pretencioso</p>
+                <p>335 k vistas • hace 10 meses </p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <img class="imagen-video" src="./img/video8.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 8.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>¿QUÉ llevó a ANAKIN al LADO OSCURO? | Star Wars 1, 2 y 3 | Relato y Reflexiones</h3>
+                <p>Farid Dieck</p>
+                <p>2.3 M vistas • hace 10 días  </p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <img class="imagen-video" src="./img/video9.jpg" alt="Video1">
+              <div class="video-info">
+                <img src="./img/Imagen Perfil video 9.jpg" alt="logo-canal" class="user">
+              <div class="detalles">
+                <h3>😮 ¡¡¡SECRETOS INCREÍBLES de los HECHIZOS!!! 😮 ✅ Baldur's Gate 3 Secretos</h3>
+                <p>Zovike Roleplays</p>
+                <p>54 k vistas • hace 1 año </p>
+              </div>
+            </div>
+          </div>
+        </div> <!--DIV PRINCIPAL POR EL CLASS DE VIDEO FILA-->
     </main>    
   </body>
 </html>
